@@ -71,7 +71,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "include/*.h"
 
-  s.vendored_library = "libev.a"
+  s.vendored_library = "lib/libev.a"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -92,9 +92,8 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.xcconfig = { 
-        "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/libev/include/",
-        "LIBRARY_SEARCH_PATHS" => "$(PODS_ROOT)/libev/lib",
-    }
+      "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/libev/include/"
+  }
 
 
 end
