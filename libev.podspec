@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "libev"
-  s.version      = "4.15.0"
+  s.version      = "4.22.0"
   s.summary      = "Unofficial libev mirror for Cocoapods"
 
   s.description  = <<-DESC
@@ -36,20 +36,6 @@ Pod::Spec.new do |s|
 
   s.license      = "BSD"
 
-
-  # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the authors of the library, with email addresses. Email addresses
-  #  of the authors are extracted from the SCM log. E.g. $ git log. CocoaPods also
-  #  accepts just a name if you'd rather not provide an email address.
-  #
-  #  Specify a social_media_url where others can refer to, for example a twitter
-  #  profile URL.
-  #
-  
-  s.authors            = { "jaylyerly" => "jayl@sonicbunny.org" }
-  s.social_media_url   = "http://twitter.com/jaylyerly"
-
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  If this Pod runs only on iOS or OS X, then specify the platform and
@@ -60,8 +46,8 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "6.0"
-  s.osx.deployment_target = "10.7"
+  s.ios.deployment_target = "9.0"
+  s.osx.deployment_target = "10.11"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -83,8 +69,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "include/*.h"
 
-  s.ios.library = "ev-ios"
-  s.osx.library = "ev-osx"
+  s.library = "libev"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -104,7 +89,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  s.requires_arc = false
+  s.requires_arc = true
 
   s.xcconfig = { 
         "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/libev/include/",
