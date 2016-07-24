@@ -23,7 +23,6 @@
 #                                                                         #
 VERSION="4.22"                                                          #
 IOS_SDKVERSION=`xcrun -sdk iphoneos --show-sdk-version`                   #
-TVOS_SDKVERSION=`xcrun -sdk appletvos --show-sdk-version`
 CONFIG_OPTIONS=""                                                         #
 CURL_OPTIONS=""                                                           #
 #                                                                         #
@@ -51,9 +50,8 @@ CURRENTPATH=`pwd`
 ARCHS="i386 x86_64 armv7 armv7s arm64"
 DEVELOPER=`xcode-select -print-path`
 PLATFORMPATH="/Applications/Xcode.app/Contents/Developer/Platforms"
-IOS_MIN_SDK_VERSION="9.0"
-TVOS_MIN_SDK_VERSION="9.0"
-MACOS_MIN_SDK_VERSION="10.11"
+IOS_MIN_SDK_VERSION="6.0"
+MACOS_MIN_SDK_VERSION="10.9"
 
 SRC_DIR_NAME=libev-${VERSION}
 SRC_DIR="${CURRENTPATH}/src/${SRC_DIR_NAME}"

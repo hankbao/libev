@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "libev"
   s.version      = "4.22.0"
-  s.summary      = "Unofficial libev mirror for Cocoapods"
+  s.summary      = "Libev for Cocoapods"
 
   s.description  = <<-DESC
                    This is a binary distribution of the libev library built for iOS and OSX.
                    The library uses configure which makes it a bit tricky to cross compile.
                    DESC
 
-  s.homepage     = "http://software.schmorp.de/pkg/libev.html"
+  s.homepage     = "https://github.com/icodesign/libev.git"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -46,8 +46,8 @@ Pod::Spec.new do |s|
   # s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  s.ios.deployment_target = "9.0"
-  s.osx.deployment_target = "10.11"
+  s.ios.deployment_target = "6.0"
+  s.osx.deployment_target = "10.9"
 
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,7 +56,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/jaylyerly/libev.git", :tag => "4.15.0" }
+  s.source       = { :git => "https://github.com/icodesign/libev.git", :tag => "4.22.0" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,8 +80,6 @@ Pod::Spec.new do |s|
   #
   
   s.preserve_paths = "include", "lib"
-
-
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
