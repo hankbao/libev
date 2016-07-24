@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "libev"
+  s.name         = "libev-iOS"
   s.version      = "4.22.0"
   s.summary      = "Libev for Cocoapods"
 
@@ -25,6 +25,8 @@ Pod::Spec.new do |s|
                    DESC
 
   s.homepage     = "https://github.com/icodesign/libev.git"
+
+  s.author       = { "iCodesign" => "leimagnet@gmail.com" }
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -69,7 +71,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "include/*.h"
 
-  s.library = "libev"
+  s.vendored_library = "libev.a"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
