@@ -1,2 +1,9 @@
 .DS_Store
 bin/
+/src/libev-4.25/.deps
+/src/libev-4.25/config.h
+/src/libev-4.25/config.log
+/src/libev-4.25/config.status
+/src/libev-4.25/libtool
+/src/libev-4.25/Makefile
+/src/libev-4.25/stamp-h1
