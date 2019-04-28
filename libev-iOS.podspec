@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "libev-iOS"
-  s.version      = "4.22.0"
+  s.version      = "4.25.0"
   s.summary      = "Libev for Cocoapods"
 
   s.description  = <<-DESC
@@ -24,10 +24,9 @@ Pod::Spec.new do |s|
                    The library uses configure which makes it a bit tricky to cross compile.
                    DESC
 
-  s.homepage     = "https://github.com/icodesign/libev.git"
+  s.homepage     = "https://github.com/hankbao/libev.git"
 
-  s.author       = { "iCodesign" => "leimagnet@gmail.com" }
-
+  s.author       = { "Hank Bao" => "hankbao84@gmail.com" }
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -51,15 +50,13 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "6.0"
   s.osx.deployment_target = "10.9"
 
-
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/icodesign/libev.git", :tag => "4.22.0" }
-
+  s.source       = { :git => "https://github.com/hankbao/libev.git", :tag => "4.25.0" }
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -70,7 +67,6 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "include/*.h"
-
   s.vendored_library = "lib/libev.a"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -80,7 +76,7 @@ Pod::Spec.new do |s|
   #  You can preserve files from being cleaned, please don't preserve
   #  non-essential files like tests, examples and documentation.
   #
-  
+
   s.preserve_paths = "include", "lib"
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -91,7 +87,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.xcconfig = { 
+  s.xcconfig = {
       "HEADER_SEARCH_PATHS" => "$(PODS_ROOT)/libev/include/"
   }
 
