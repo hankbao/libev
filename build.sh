@@ -21,7 +21,7 @@
 ###########################################################################
 #  Change values here                                                     #
 #                                                                         #
-VERSION="4.22"                                                          #
+VERSION="4.25"                                                          #
 IOS_SDKVERSION=`xcrun -sdk iphoneos --show-sdk-version`                   #
 CONFIG_OPTIONS=""                                                         #
 CURL_OPTIONS=""                                                           #
@@ -47,7 +47,7 @@ spinner()
 }
 
 CURRENTPATH=`pwd`
-ARCHS="i386 x86_64 armv7 armv7s arm64"
+ARCHS="i386 x86_64 armv7 arm64"
 DEVELOPER=`xcode-select -print-path`
 PLATFORMPATH="/Applications/Xcode.app/Contents/Developer/Platforms"
 IOS_MIN_SDK_VERSION="6.0"
@@ -121,7 +121,6 @@ lipo -create \
   ${CURRENTPATH}/bin/iPhoneSimulator${IOS_SDKVERSION}-i386.sdk/libev.a \
   ${CURRENTPATH}/bin/iPhoneSimulator${IOS_SDKVERSION}-x86_64.sdk/libev.a \
   ${CURRENTPATH}/bin/iPhoneOS${IOS_SDKVERSION}-armv7.sdk/libev.a \
-  ${CURRENTPATH}/bin/iPhoneOS${IOS_SDKVERSION}-armv7s.sdk/libev.a \
   ${CURRENTPATH}/bin/iPhoneOS${IOS_SDKVERSION}-arm64.sdk/libev.a \
   -output ${CURRENTPATH}/lib/libev.a
 
